@@ -1,0 +1,310 @@
+/* Genel stil */
+.index-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Beyaz arka plan */
+    color: #000; /* Yazı rengi siyah */
+    height: 100vh; /* Ekran yüksekliğini tam yap */
+    background-image: url('/public/images/background.png'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tam ekran kapla */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engelle */
+    background-position: center; /* Resmi ortala */
+    image-rendering: auto; /* Tarayıcıların resmi düzgün işlemesini sağlar */
+}
+
+/* Navbar Stili */
+.navbar {
+    width: 100%;
+    background-color: #fafcfe; /* Beyaz arka plan */
+    padding: 20px 40px;
+    position: fixed; /* Sayfanın üst kısmına sabitler */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlar */
+    display: flex;
+    justify-content: space-between; /* Sol ve sağdaki içerikleri ayır */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+.navbar-brand {
+    margin-right: auto; /* Sol tarafa hizala */
+}
+
+.navbar-brand h1 {
+    font-size: 2.5rem; /* Daha büyük yazı boyutu */
+    color: #ffc107; /* Mavi renk */
+    font-family: 'Georgia', serif; /* Özel yazı tipi */
+    font-weight: bold; /* Kalın yazı */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    text-transform: uppercase; /* Büyük harf */
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center; /* Bağlantıları yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    flex: 1; /* Ortalamayı sağlamak için esnek alan */
+    gap: 20px; /* Bağlantılar arasında boşluk */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffc107; /* Hover sırasında mavi renk */
+}
+
+/* Hero kısmı (arka plan resmi ve yazı) */
+.hero {
+    height: 100vh; /* Hero alanını ekranın tamamını kapla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Yazıyı dikey olarak ortala */
+    color: rgb(5, 0, 0); /* Yazı rengini beyaz yap */
+    text-align: center; /* Yazıyı ortala */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Başlık font boyutu */
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Footer Stili */
+footer {
+    background-color: #343a40; /* Koyu gri arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+    text-align: center;
+    padding: 4rem 0; /* Daha fazla iç boşluk */
+    font-size: 1.2rem; /* Genel yazı boyutunu büyüttük */
+}
+
+footer .footer-content {
+    max-width: 1200px; /* İçeriği sınırlamak için genişlik */
+    margin: 0 auto; /* Ortalamak için */
+    display: flex; /* İçeriği yatay hizalamak için flexbox */
+    flex-wrap: wrap; /* İçerik taşarsa alt satıra geçsin */
+    justify-content: space-between; /* İçerikler arasında boşluk bırak */
+    padding: 0 1rem; /* Kenarlardan boşluk */
+}
+
+footer .footer-section {
+    flex: 1 1 300px; /* Her bölümün genişliği minimum 300px */
+    margin: 1rem; /* Bölümler arasında boşluk */
+    text-align: left; /* Yazıları sola hizala */
+}
+
+footer h2 {
+    font-size: 2rem; /* Başlık boyutunu büyüttük */
+    margin-bottom: 1.5rem; /* Başlık altına boşluk ekledik */
+    font-weight: bold; /* Başlık yazısını kalın yaptık */
+    color: #fff; /* Başlık rengini beyaz yaptık */
+}
+
+footer h3 {
+    font-size: 1.5rem; /* Alt başlık boyutu */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Alt başlık yazısını kalın yaptık */
+}
+
+footer p {
+    margin: 0.5rem 0; /* Paragraflar arasında boşluk */
+    font-size: 1.2rem; /* Paragraf yazı boyutunu büyüttük */
+    line-height: 1.6; /* Satır yüksekliğini artırdık */
+}
+
+footer a {
+    color: #ffc107; /* Sarı bağlantı rengi */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Bağlantı yazı boyutunu büyüttük */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Hover sırasında alt çizgi */
+}
+
+.social-icons {
+    display: flex; /* Simgeleri yan yana hizalar */
+    gap: 10px; /* Simgeler arasındaki boşluk */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Simgelerin genişliği */
+    height: 40px; /* Simgelerin yüksekliği */
+}
+
+.social-icons img {
+    width: 100%; /* Görsellerin genişliğini kapsar */
+    height: auto; /* Görsellerin oranını korur */
+    border-radius: 50%; /* Simgeleri yuvarlak yapar */
+    transition: transform 0.3s ease; /* Hover animasyonu */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Hover sırasında simgeyi büyütür */
+}
+/*ikinci görsel kısmı      */
+.split-section {
+    display: flex; /* Görsel ve yazıyı yan yana hizalar */
+    align-items: center; /* Dikeyde ortalar */
+    justify-content: center; /* Yatayda ortalar */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    background-color: #f8f9fa; /* Hafif gri arka plan */
+}
+
+.split-image {
+    flex: 1; /* Görsel alanı yarısını kaplar */
+    display: flex;
+    justify-content: center; /* Görseli yatayda ortalar */
+}
+
+.split-image .half-image {
+    max-width: 100%; /* Görsel genişliğini sınırla */
+    height: 100vh; /* Dikey boyutu artırıldı */
+    object-fit: cover; /* Görselin oranını koruyarak alanı doldurmasını sağlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    image-rendering: crisp-edges; /* Görselin netliğini artırır */}
+
+.split-text {
+    flex: 1; /* Yazı alanı yarısını kaplar */
+    padding: 20px; /* İçerik boşluğu */
+    color: #ffc107; /* Sarı yazı rengi */
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem; /* Yazı boyutunu artırdık */
+    line-height: 2; /* Satır yüksekliğini artırdık */
+    margin-top: 20px; /* Üstten boşluk ekledik */
+    margin-bottom: 20px; /* Alttan boşluk ekledik */
+}
+
+.split-text h2 {
+    font-size: 2.5rem; /* Başlık boyutunu artırdık */
+    margin-bottom: 30px; /* Başlık altına daha fazla boşluk ekledik */
+    font-weight: bold;
+    color: #ffc107; /* Sarı başlık rengi */
+}
+
+.split-text p {
+    font-size: 1.5rem; /* Paragraf boyutunu artırdık */
+    margin-bottom: 20px; /* Paragraflar arasında daha fazla boşluk */
+    line-height: 1; /* Satır yüksekliğini artırdık */
+}
+/* Menü Sayfası Genel Stil */
+.menu-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Hafif gri arka plan */
+    color: #000; /* Siyah yazı rengi */
+}
+
+/* Menü Başlığı */
+.menu-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #007bff; /* Mavi renk */
+}
+
+/* Menü Grid */
+.menu-grid {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey olarak sıralar */
+    gap: 20px; /* Elemanlar arasında boşluk bırakır */
+    padding: 20px;
+}
+
+/* Menü Konteyner */
+.menu-item {
+    display: flex; /* İçeriği yatayda hizalamak için flexbox kullan */
+    align-items: center; /* Dikeyde ortala */
+    gap: 30px; /* Resim ve yazı arasında boşluk bırak */
+    background-color: #fff; /* Beyaz arka plan */
+    border: 1px solid #ddd; /* Hafif kenarlık */
+    border-radius: 15px; /* Köşeleri yuvarlat */
+    padding: 40px; /* Konteynerin iç boşluklarını artır */
+    text-align: left; /* Yazıyı sola hizala */
+    font-size: 1.6rem; /* Yazı boyutunu büyüt */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Daha belirgin gölge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Menü Resimleri */
+.menu-item img {
+    width: 150px; /* Resmin genişliğini artır */
+    height: 150px; /* Resmin yüksekliğini artır */
+    object-fit: cover; /* Resmin oranını koruyarak alanı doldurmasını sağlar */
+    border-radius: 12px; /* Köşeleri yuvarlatır */
+    margin: 0; /* Resmin çevresindeki varsayılan boşlukları kaldır */
+}
+
+/* Menü Yazıları */
+.menu-item p {
+    margin: 0; /* Varsayılan tüm boşlukları kaldır */
+    font-size: 1.4rem; /* Yazı boyutunu büyüt */
+    font-weight: bold;
+    color: #333;
+    align-self: flex-start; /* Yazıyı yukarı hizala */
+}
+
+/* Hover Efekti */
+.menu-item:hover {
+    transform: scale(1.01); /* Hover sırasında hafif büyütme */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+/* Kaydırılabilir Konteyner */
+.scrollable-container {
+    display: flex;
+    overflow-x: auto; /* Yatay kaydırma */
+    gap: 20px; /* Konteynerler arasında boşluk */
+    padding: 20px 10px; /* Üst, alt ve yan boşluklar */
+    background-color: #f8f9fa; /* Hafif gri arka plan */
+    scroll-behavior: smooth; /* Kaydırma animasyonu */
+    margin-top: 100px; /* Navbar ile konteynerler arasında boşluk */
+    margin-bottom: 20px; /* Alt kısımda daha fazla boşluk */
+}
+
+.scroll-item {
+    flex: 0 0 auto; /* Konteynerlerin genişliği sabit */
+    width: 250px; /* Konteyner genişliği */
+    height: 300px; /* Konteynerin dikey boyutunu artırdık */
+    background-color: #fff; /* Beyaz arka plan */
+    border: 1px solid #ddd; /* Hafif kenarlık */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    text-align: center;
+    padding: 15px; /* İçerik boşluğu artırıldı */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti */
+}
+
+.scroll-item img {
+    max-width: 100%; /* Resmin genişliğini kapsar */
+    height: 200px; /* Resmin yüksekliğini artırdık */
+    object-fit: cover; /* Resmin oranını koruyarak alanı doldurmasını sağlar */
+    border-radius: 10px; /* Köşeleri yuvarlatır */
+    margin-bottom: 10px; /* Resim ile yazı arasına boşluk */
+}
+
+.scroll-item p {
+    font-size: 1.2rem; /* Yazı boyutunu artırdık */
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0; /* Yazının üst ve alt boşlukları */
+}
+
+/* Hover Efekti */
+.scroll-item:hover {
+    transform: scale(1.05); /* Hafif büyütme */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}

@@ -1,0 +1,161 @@
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Stili */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.navbar .navbar-brand h1 {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Paneli */
+.admin-page {
+    padding: 20px;
+}
+
+.product-management {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-management h2 {
+    margin-top: 0;
+}
+
+.add-product,
+.product-list {
+    margin-top: 20px;
+}
+
+/* Ürün Ekleme Formu */
+.add-product form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.add-product input,
+.add-product select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-product button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-product button:hover {
+    background-color: #45a049;
+}
+
+/* Ürün Listeleme */
+.product-list {
+    margin-top: 20px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.product-info {
+    margin-left: 20px;
+}
+
+.product-info p {
+    margin: 0;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+/* Ürün Açıklaması Stili */
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/style/kategori.css">
+    <title>Kategori Yönetimi</title>
+</head>
+<body class="admin-page">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Rasavor Admin Paneli</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="anasayfa.html" class="home-link">🏛 Anasayfa</a>
+            <a href="Menu.html">📋 Menü</a>
+            <a href="yorumlar.html">💬 Yorumlar</a>
+        </div>
+    </nav>
+
+    <div class="category-management">
+        <h2>Kategori Yönetimi</h2>
+        <div class="add-category">
+            <h3>Yeni Kategori Ekle</h3>
+            <form action="#" method="POST">
+                <label for="category-name">Kategori Adı:</label>
+                <input type="text" id="category-name" name="category-name" placeholder="Kategori adı girin" required>
+
+                <label for="category-image">Kategori Görseli:</label>
+                <input type="file" id="category-image" name="category-image" accept="images">
+
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+
+        <div class="category-list">
+            <h3>Kategoriler</h3>
+            <div class="category-item">
+                <img src="/admin/images/corba.png" alt="Çorbalar">
+                <div class="category-info">
+                    <p><strong>Çorbalar</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/arasıcak.png" alt="Ara Sıcaklar">
+                <div class="category-info">
+                    <p><strong>Ara Sıcaklar</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/tavuk.png" alt="Tavuk Yemekleri">
+                <div class="category-info">
+                    <p><strong>Tavuk Yemekleri</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/balık.png" alt="Balık Yemekleri">
+                <div class="category-info">
+                    <p><strong>Balık Yemekleri</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/dunya.png" alt="Dünya Mutfağı">
+                <div class="category-info">
+                    <p><strong>Dünya Mutfağı</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/osmanlı.png" alt="Osmanlı Mutfağı">
+                <div class="category-info">
+                    <p><strong>Osmanlı Mutfağı</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/makarnalar.png" alt="Makarnalar">
+                <div class="category-info">
+                    <p><strong>Makarana Yemekleri</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/salatalar.png" alt="Salatalar">
+                <div class="category-info">
+                    <p><strong>Salatalar</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/tatlı.png" alt="Tatlılar">
+                <div class="category-info">
+                    <p><strong>Tatlılar</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/mezeler.png" alt="Mezeler">
+                <div class="category-info">
+                    <p><strong>Mezeler</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/soğuk.png" alt="Soğuk İçecekler">
+                <div class="category-info">
+                    <p><strong>Soğuk İçecekler</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="/admin/images/sıcak.png" alt="Soğuk İçecekler">
+                <div class="category-info">
+                    <p><strong>Sıcak İçecekler</strong></p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

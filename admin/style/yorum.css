@@ -1,0 +1,103 @@
+/* Sayfa yüksekliği ayarları */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Flexbox ile alt sabitleme */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ana içerik alanı */
+main {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+/* Navbar Stili */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.navbar .navbar-brand h1 {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Yorum Tablosu */
+.comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+.comments-table th, .comments-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.comments-table th {
+    background-color: #333;
+    color: white;
+}
+
+.comments-table .badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+.comments-table .badge.pending { background-color: orange; }
+.comments-table .badge.approved { background-color: green; }
+.comments-table .badge.cancelled { background-color: red; }
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.approve-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #e53935;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: auto;
+}

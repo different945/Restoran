@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Rezervasyon Yönetimi</title>
+  <link rel="stylesheet" href="/admin/style/Rezerve.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Rasavor Admin Paneli</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="anasayfa.html" class="home-link">🏛 Anasayfa</a>
+            <a href="Menu.html">📋 Menü</a>
+            <a href="yorumlar.html">💬 Yorumlar</a>
+        </div>
+    </nav>
+
+  <section class="admin-rezervasyon">
+    <h2>Tüm Rezervasyonlar</h2>
+
+    <div class="filter-bar">
+      <input type="date" id="filter-date" />
+      <input type="text" placeholder="İsim ile ara" id="filter-name" />
+      <select id="filter-status">
+        <option value="">Tüm Durumlar</option>
+        <option value="onaylandi">Onaylandı</option>
+        <option value="bekliyor">Bekliyor</option>
+        <option value="iptal">İptal</option>
+      </select>
+      <button onclick="filtrele()">Filtrele</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tarih</th>
+          <th>Saat</th>
+          <th>Masa</th>
+          <th>Kişi</th>
+          <th>Ad Soyad</th>
+          <th>Telefon</th>
+          <th>Durum</th>
+          <th>İşlem</th>
+        </tr>
+      </thead>
+      <tbody id="rezervasyon-listesi">
+        <!-- Örnek veri -->
+        <tr>
+          <td>2025-04-12</td>
+          <td>19:20</td>
+          <td>I4</td>
+          <td>4</td>
+          <td>Mehmet Yılmaz</td>
+          <td>05001234567</td>
+          <td><span class="badge waiting">Bekliyor</span></td>
+          <td>
+            <button class="onayla">Onayla</button>
+            <button class="iptal">İptal Et</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CİBO Admin Paneli</p>
+  </footer>
+</body>
+</html>

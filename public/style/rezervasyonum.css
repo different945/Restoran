@@ -1,0 +1,129 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/admin/images/background2.png'); /* Arka plan resmi ekleniyor */
+  background-size: cover; /* Resmin ekranı tamamen kaplamasını sağlar */
+  background-position: center; /* Resmin ortalanmasını sağlar */
+  background-attachment: fixed; /* Arka planın kaydırılmamasını sağlar */
+  background-repeat: no-repeat; /* Resmin tekrarlanmamasını sağlar */
+}
+
+/* Navbar Stili */
+.navbar {
+  width: 100%;
+  background-color: #fafcfe; /* Beyaz arka plan */
+  padding: 20px 40px;
+  position: fixed; /* Sayfanın üst kısmına sabitler */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlar */
+  display: flex;
+  justify-content: space-between; /* Sol ve sağdaki içerikleri ayır */
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Sol tarafa hizala */
+}
+
+.navbar-brand h1 {
+  font-size: 2.5rem; /* Daha büyük yazı boyutu */
+  color: #ffc107; /* Sarı renk */
+  font-family: 'Georgia', serif; /* Özel yazı tipi */
+  font-weight: bold; /* Kalın yazı */
+  margin: 0; /* Varsayılan boşlukları kaldır */
+  text-transform: uppercase; /* Büyük harf */
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center; /* Bağlantıları yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+  flex: 1; /* Ortalamayı sağlamak için esnek alan */
+  gap: 20px; /* Bağlantılar arasında boşluk */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffc107; /* Hover sırasında sarı renk */
+}
+
+.search-container {
+  position: absolute; /* Konumlandırmayı kesinleştir */
+  top: 50%; /* Navbar'ın ortasına hizala */
+  right: 80px; /* Sağdan boşluk */
+  transform: translateY(-50%); /* Dikey ortalama */
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Sol kenarları yuvarla */
+  outline: none;
+  width: 200px; /* Genişlik */
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ffc107;
+  background-color: hsl(46, 100%, 50%);
+  color: #fff;
+  border-radius: 0 4px 4px 0; /* Sağ kenarları yuvarla */
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #ffc107; /* Hover rengi */
+}
+
+/* Rezervasyon Bilgileri Alanı */
+.reservation-details-container {
+  margin-top: 200px; /* Navbar'ın altına biraz boşluk */
+  padding: 20px;
+  background-color: #f8f9fa;
+  margin-left: 110px; /* Sol kenardan boşluk */
+  margin-right: 100px; /* Sağ kenardan boşluk */
+}
+
+.reservation-details-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.reservation-info-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Şeffaf arka plan (beyaz) */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reservation-info {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#reservation-info p {
+  margin-bottom: 10px;
+}
+
+#reservation-info span {
+  font-weight: bold;
+  color: #007bff;
+}

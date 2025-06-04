@@ -1,0 +1,279 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.hero h1{
+    font-family: 'Georgia', serif; /* Özel yazı tipi */
+}
+
+ h2, h3 {
+    text-align: center;
+    color: #222;
+}
+
+/* Navbar stilleri */
+.navbar {
+    background-color: #fafcfe; /* Beyaz arka plan */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    font-size: 18px;
+}
+
+/* Sol tarafa hizalanmış Cibo markası */
+.navbar-brand h1 {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Arial Black', sans-serif; /* Önceki sayfandaki yazı stilini koruduk */
+    color: #ffc107; /* Sarı renk */
+}
+
+/* Anasayfa linkini ortaya almak için */
+.navbar-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 20px;
+}
+
+.navbar-links a:hover {
+    color: #ff9f00;
+}
+
+/* Blog ve Haber Listeleme */
+.blog_list_section {
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    width: 30%;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Kartların içeriklerini dikey hizalayacak şekilde düzenledik */
+}
+
+.col-md-4:hover {
+    transform: scale(1.05);
+}
+
+.blog_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog_card .info {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1; /* Metin alanının butonla birlikte büyümesini engeller */
+}
+
+.blog_card .info .date {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.blog_card .info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.blog_card .info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog_card .btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+    margin-top: 15px; /* Butonu metnin altına itiyoruz */
+}
+
+.blog_card .btn:hover {
+    background: #555;
+}
+
+/* Sayfalama */
+.pagination_block {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination_block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagination_block ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.pagination_block ul li a {
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.pagination_block ul li a:hover, .pagination_block ul li a.active {
+    background: #555;
+}
+
+/* Footer Stili */
+footer {
+    background-color: #343a40; /* Koyu gri arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+    text-align: center;
+    padding: 4rem 0; /* Daha fazla iç boşluk */
+    font-size: 1.2rem; /* Genel yazı boyutunu büyüttük */
+}
+
+footer .footer-content {
+    max-width: 1200px; /* İçeriği sınırlamak için genişlik */
+    margin: 0 auto; /* Ortalamak için */
+    display: flex; /* İçeriği yatay hizalamak için flexbox */
+    flex-wrap: wrap; /* İçerik taşarsa alt satıra geçsin */
+    justify-content: space-between; /* İçerikler arasında boşluk bırak */
+    padding: 0 1rem; /* Kenarlardan boşluk */
+}
+
+footer .footer-section {
+    flex: 1 1 300px; /* Her bölümün genişliği minimum 300px */
+    margin: 1rem; /* Bölümler arasında boşluk */
+    text-align: left; /* Yazıları sola hizala */
+}
+
+footer h2 {
+    font-size: 2rem; /* Başlık boyutunu büyüttük */
+    margin-bottom: 1.5rem; /* Başlık altına boşluk ekledik */
+    font-weight: bold; /* Başlık yazısını kalın yaptık */
+    color: #fff; /* Başlık rengini beyaz yaptık */
+}
+
+footer h3 {
+    font-size: 1.5rem; /* Alt başlık boyutu */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Alt başlık yazısını kalın yaptık */
+    color: #fff; /* Başlık rengini beyaz yaptık */
+}
+
+footer p {
+    margin: 0.5rem 0; /* Paragraflar arasında boşluk */
+    font-size: 1.2rem; /* Paragraf yazı boyutunu büyüttük */
+    line-height: 1.6; /* Satır yüksekliğini artırdık */
+}
+
+footer a {
+    color: #ffc107; /* Sarı bağlantı rengi */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Bağlantı yazı boyutunu büyüttük */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Hover sırasında alt çizgi */
+}
+
+.social-icons {
+    display: flex; /* Simgeleri yan yana hizalar */
+    gap: 10px; /* Simgeler arasındaki boşluk */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Simgelerin genişliği */
+    height: 40px; /* Simgelerin yüksekliği */
+}
+
+.social-icons img {
+    width: 100%; /* Görsellerin genişliğini kapsar */
+    height: auto; /* Görsellerin oranını korur */
+    border-radius: 50%; /* Simgeleri yuvarlak yapar */
+    transition: transform 0.3s ease; /* Hover animasyonu */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Hover sırasında simgeyi büyütür */
+}
+
+/* Responsive Düzenleme */
+@media screen and (max-width: 768px) {
+    .col-md-4 {
+        width: 48%; /* Mobil cihazlarda kartlar %48 genişliğinde olacak */
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-md-4 {
+        width: 100%; /* Mobilde tek sütun düzeni */
+        margin-bottom: 15px;
+    }
+}
+/* Başlangıçta içerikler gizli */
+.blog-content {
+    display: none;
+}
+
+/* Checkbox ile içerik gösterme */
+input[type="checkbox"]:checked + .blog-content {
+    display: block;
+}
+
+/* Devamını Oku butonunu stilize et */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

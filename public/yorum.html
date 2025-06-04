@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorumlar</title>
+    <link rel="stylesheet" href="style/yorum.css"> <!-- Stil dosyanızın doğru yolu -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>RASAVOR</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html" class="home-link">🏛 Anasayfa</a>
+            <a href="menu.html">🍽️ Menü</a>
+            <a href="rezerve.html">📅 Rezervasyon Yap</a>
+            <a href="blog.html">📰Blog</a>
+        </div>
+    </nav>
+    <h1>Yorum Yapın</h1>
+    
+    <!-- Yorum formu -->
+    <form id="commentForm">
+        <input type="text" id="name" placeholder="Adınız" required />
+        <textarea id="content" placeholder="Yorumunuz" required></textarea>
+        <input type="number" id="rating" placeholder="Puan (1-5)" min="1" max="5" required />
+        <button type="submit">Yorum Yap</button>
+    </form>
+
+    <hr>
+
+    <h2>Mevcut Yorumlar</h2>
+    <div id="commentsContainer"></div> <!-- Yorumlar burada listelenecek -->
+</body>
+
+</html>

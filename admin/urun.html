@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/style/urun.css">
+    <title>Ürün Yönetimi</title>
+</head>
+<body class="admin-page">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Rasavor Admin Paneli</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="anasayfa.html" class="home-link">🏛 Anasayfa</a>
+            <a href="Menu.html">📋 Menü</a>
+            <a href="kategori.html">📂 Kategoriler</a>
+        </div>
+    </nav>
+
+    <div class="product-management">
+        <h2>Ürün Yönetimi</h2>
+
+        <!-- Ürün Ekleme Formu -->
+        <div class="add-product">
+            <h3>Yeni Ürün Ekle</h3>
+            <form action="#" method="POST">
+                <label for="product-name">Ürün Adı:</label>
+                <input type="text" id="product-name" name="product-name" placeholder="Ürün adı girin" required>
+
+                <label for="product-category">Kategori Seçin:</label>
+                <select id="product-category" name="product-category" required>
+                    <option value="corba">Çorbalar</option>
+                    <option value="corba">Ara Sıcaklar</option>
+                    <option value="tavuk">Tavuk Yemekleri</option>
+                    <option value="balik">Balık Yemekleri</option>
+                    <option value="balik">Dünya Mutfağı</option>
+                    <option value="balik">Osmanlı Mutfağı</option>
+                    <option value="makarna">Makarna</option>
+                    <option value="salata">Salatalar</option>
+                    <option value="tatli">Tatlılar</option>
+                    <option value="tatli">Mezeler</option>
+                    <option value="tatli">Soğuk İçecekler</option>
+                    <option value="tatli">Sıcak İçecekler</option>
+                </select>
+
+                <label for="product-description">Ürün Açıklaması:</label>
+                <textarea id="product-description" name="product-description" placeholder="Ürün açıklamasını girin" required></textarea>
+
+                <label for="product-price">Fiyat:</label>
+                <input type="number" id="product-price" name="product-price" placeholder="Ürün fiyatı girin" required>
+
+                <label for="product-image">Ürün Görseli:</label>
+                <input type="file" id="product-image" name="product-image" accept="image/*">
+
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+
+        <!-- Ürün Listeleme -->
+        <div class="product-list">
+            <h3>Ürünler</h3>
+            <div class="product-item">
+                <img src="images/corba.png" alt="Çorba Ürünü">
+                <div class="product-info">
+                    <p><strong>Çorba Ürünü</strong></p>
+                    <p>Kategori: Çorbalar</p>
+                    <p>Fiyat: 25₺</p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/tavuk.png" alt="Tavuk Yemeği">
+                <div class="product-info">
+                    <p><strong>Tavuk Yemeği</strong></p>
+                    <p>Kategori: Tavuk Yemekleri</p>
+                    <p>Fiyat: 40₺</p>
+                    <button class="edit-btn">Düzenle</button>
+                    <button class="delete-btn">Sil</button>
+                </div>
+            </div>
+            <!-- Diğer ürünler burada listelenecek -->
+        </div>
+    </div>
+</body>
+</html>

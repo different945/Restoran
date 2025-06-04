@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Yorum Yönetimi</title>
+    <link rel="stylesheet" href="/admin/style/yorum.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Rasavor Admin Paneli</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="anasayfa.html" class="home-link">🏛 Anasayfa</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Yorum Yönetimi</h1>
+
+        <table class="comments-table">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Yorum</th>
+                    <th>Puan</th>
+                    <th>Durum</th>
+                    <th>Aksiyonlar</th>
+                </tr>
+            </thead>
+            <tbody id="comments-container">
+                <!-- MongoDB'den gelen yorumlar buraya yansıtılacak -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CİBO Restoranı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
